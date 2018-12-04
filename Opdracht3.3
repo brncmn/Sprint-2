@@ -1,0 +1,26 @@
+using System;
+
+namespace Opdracht_3._3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double width, length, height, anwser, afgerond;
+            Console.WriteLine("Wat is de hoogte van de kubus?");
+            height = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Wat is de lengte van de kubus?");
+            length = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Wat is de breedte van de kubus?");
+            width = Convert.ToDouble(Console.ReadLine());
+
+            anwser = height * length * width;
+            afgerond = Math.Round(anwser, 2);
+
+            Console.WriteLine("De inhoud van de kubus is: " + afgerond);
+            Console.ReadKey();
+        }
+    }
+}
