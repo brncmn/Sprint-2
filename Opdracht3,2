@@ -1,0 +1,25 @@
+using System;
+
+namespace Opdracht_3._2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime wife, husband;
+            string anwser;
+
+            Console.WriteLine("Birthdate wife?");
+            wife = Convert.ToDateTime(Console.ReadLine());
+
+            Console.WriteLine("birthdate husband?");
+            husband = Convert.ToDateTime(Console.ReadLine());
+
+            anwser = Convert.ToString(Math.Abs((wife.Date - husband.Date).TotalDays));
+            Console.WriteLine("Age difference: " + anwser);
+
+            Console.ReadKey();
+        }
+    }
+}
+
