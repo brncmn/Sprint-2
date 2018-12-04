@@ -1,0 +1,29 @@
+using System;
+
+namespace Opdracht_3._4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double euro, dollar, pond, roebel, yen, yuan;
+
+            Console.WriteLine("Hoeveel euro wilt u omrekenen?");
+            euro = Convert.ToDouble(Console.ReadLine());
+
+            dollar = euro * 1.1271;
+            pond = euro * 0.8758;
+            roebel = euro * 76.1935;
+            yen = euro * 128.337;
+            yuan = euro * 7.8486;
+
+            Console.WriteLine("Euro -> Dollar: " + dollar);
+            Console.WriteLine("Euro -> Pond: " + pond);
+            Console.WriteLine("Euro -> Roebel: " + roebel);
+            Console.WriteLine("Euro -> Yen: " + yen);
+            Console.WriteLine("Euro -> Yuan: " + yuan);
+
+            Console.ReadKey();
+        }
+    }
+}
