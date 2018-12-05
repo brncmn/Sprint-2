@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht5._3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Variabelen 
+            int getal1, getal2, tellen;
+
+            // Vraag om 2 getallen
+            Console.WriteLine("Geef getal1: ");
+            getal1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Geef getal2: ");
+            getal2 = Convert.ToInt32(Console.ReadLine());
+
+            for (tellen = getal2 + 1; tellen < getal1; tellen++)
+
+            {
+                Console.WriteLine(Math.Abs(tellen));
+                Console.ReadKey();
+            }
+            for (tellen = getal1 + 1; tellen < getal2; tellen++)
+
+            {
+                Console.WriteLine(Math.Abs(tellen));
+                Console.ReadKey();
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
