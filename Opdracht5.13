@@ -1,0 +1,45 @@
+using System;
+public class Program
+{
+    public static void Main()
+    {
+        string str;
+        int i, len, klinkers, medeklinkers, num, tekens;
+
+        Console.Write("type een woord of zin: ");
+        str = Console.ReadLine();
+
+        klinkers = 0;
+        medeklinkers = 0;
+        num = 0;
+        tekens = 0;
+        len = str.Length;
+
+        for (i = 0; i < len; i++)
+        {
+
+            if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || str[i] == 'A' || str[i] == 'E' || str[i] == 'I' || str[i] == 'O' || str[i] == 'U')
+            {
+                klinkers++;
+            }
+            else if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
+            {
+                medeklinkers++;
+            }
+            else if (str[i] >= '0' && str[i] <= '9')
+            {
+                num++;
+            }
+            else if (str[i] == '!' || str[i] == '@' || str[i] == '#' || str[i] == '$' || str[i] == '%' || str[i] == '&' || str[i] == '*' || str[i] == '(' || str[i] == ')' || str[i] == '=' || str[i] == '+' || str[i] == '?')
+            {
+                tekens++;
+            }
+        }
+        Console.Write("\naantal klinkers is : {0}\n", klinkers);
+        Console.Write("aantal medeklinkers : {0}\n\n", medeklinkers);
+        Console.Write("aantal cijfers : {0}\n\n", num);
+        Console.Write("aantal tekens : {0}\n\n", tekens);
+        Console.ReadLine();
+        Main();
+    }
+}
