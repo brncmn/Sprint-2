@@ -1,0 +1,42 @@
+using System;
+using System.Linq;
+
+namespace Opdracht_5._12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            int[] getallen = new int[10];
+
+            for (i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Vul je nummer in:");
+                getallen[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.Clear();
+
+            for (i = 0; i < 10; i++)
+            {
+                if (getallen[i] == getallen.Max())
+                {
+                    Console.BackgroundColor = ConsoleColor.Blue;
+                }
+                else if (getallen[i] == getallen.Min())
+                {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                }
+                else
+                {
+                    Console.BackgroundColor = ConsoleColor.Black;
+                }
+
+                Console.WriteLine("Je hebt {0} ingevuld.", getallen[i]);
+            }
+
+            Console.ReadKey();
+            Console.ResetColor();
+        }
+    }
+}
