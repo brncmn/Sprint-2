@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht5._18
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Vul in E-mail adres: ");
+            string email = Console.ReadLine();
+
+            //ControleOpEmail(email);
+            /*
+             * Je gebruikt & wanneer .com en .nl nodig zijn. 
+             * Je gebruikt | wanneer of .com of .nl nodig is.
+             * stel h.Huiben@huiben.nl 
+             */
+
+            //if ((email.Contains(".com") | email.Contains(".nl")) & email.Contains("@"))
+            //    Console.WriteLine("Een geldig email adres");
+            //else
+            //    Console.WriteLine("Geen geldig email adres");
+
+            if (ControleOpEmail(email))
+                Console.WriteLine("Een geldig email adres");
+            else
+                Console.WriteLine("Geen geldig email adres");
+
+
+            //string[] emailadressen = new string[100];
+            //emailadressen[0] = "marietje@kwakman.nl";
+            //emailadressen[1] = "barancimen14@hotmail.com";
+            //emailadressen[2] = "blahblah@gmail.nl";
+            //emailadressen[3] = "foutemailadres";
+
+            ////verwijder alle foutieve emailadressen
+            //for (int i = 0; i < emailadressen.Length; i++)
+            //{
+            //    if (ControleOpEmail(emailadressen[i]) == false)
+            //        emailadressen[i].Remove(i);
+            //}
+
+
+            Console.ReadLine();
+        }
+
+        /// <summary>
+        /// Deze methode verifieert het email adres
+        /// </summary>
+        /// <param name="_email">Het email adres</param>
+        /// <returns>deze methode retourneert een true wanneer het een geldig email adres is, anders een false</returns>
+        private static bool ControleOpEmail(string _email)
+        {
+            if (!_email.Contains(".com") & !_email.Contains(".nl") | !_email.Contains("@"))
+            {
+                return false;
+            }
+            else
+                return true;           
+        }
+    }
+}
