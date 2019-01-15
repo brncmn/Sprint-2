@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht_4._8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const int Nederlands = 1;
+            const int Duits = 2;
+            const int Engels = 3;
+            const int Frans = 4;
+            const int Spaans = 5;
+            const int Italiaans = 6;
+
+            int taal;
+
+            Console.WriteLine("Kies een taal: ");
+            Console.WriteLine("1 = Nederlands");
+            Console.WriteLine("2 = Duits");
+            Console.WriteLine("3 = Engels");
+            Console.WriteLine("4 = Frans");
+            Console.WriteLine("5 = Spaans");
+            Console.WriteLine("6 = Italiaans");
+            taal = Convert.ToInt16(Console.ReadLine());
+
+            if (taal == Nederlands)
+                Console.WriteLine("De huidige maand is December.");
+            else if (taal == Duits)
+                Console.WriteLine("Der aktuelle Monat ist Dezember.");
+            else if (taal == Engels)
+                Console.WriteLine("The current month is December.");
+            else if (taal == Frans)
+                Console.WriteLine("Le mois en cours est décembre.");
+            else if (taal == Spaans)
+                Console.WriteLine("El mes actual es diciembre.");
+            else if (taal == Italiaans)
+                Console.WriteLine("Il mese corrente è dicembre.");
+            else Console.WriteLine("Er is geen geldige taal geselecteerd.");
+
+            Console.ReadKey();
+        }
+    }
+}
+
