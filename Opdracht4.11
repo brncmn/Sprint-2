@@ -1,0 +1,77 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace opdracht_4._11
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const int een = 1;
+            const int twee = 2;
+            const int drie = 3;
+            const int vier = 4;
+            const int vijf = 5;
+            const int zes = 6;
+            const int zeven = 7;
+            const int acht = 8;
+            const int negen = 9;
+            const int tien = 10;
+            const int elf = 11;
+            const int twaalf = 12;
+
+
+
+            int getal;
+
+            Console.WriteLine("Vul nummer maand in: ");
+            getal = Convert.ToInt16(Console.ReadLine());
+
+            if (getal == een)
+                Console.WriteLine("De gekozen maand is januari en deze heeft 31 dagen.");
+
+            else if (getal == twee)
+                Console.WriteLine("De gekozen maand is februari en deze heeft 28 dagen. In een schrikkeljaar is het aantal dagen in februari 29.");
+
+            else if (getal == drie)
+                Console.WriteLine("De gekozen maand is maart en deze heeft 31 dagen.");
+
+            else if (getal == vier)
+                Console.WriteLine("De gekozen maand is april en deze heeft 30 dagen.");
+
+            else if (getal == vijf)
+                Console.WriteLine("De gekozen maand is mei en deze heeft 31 dagen.");
+
+            else if (getal == zes)
+                Console.WriteLine("De gekozen maand is juni en deze heeft 30 dagen.");
+
+            else if (getal == zeven)
+                Console.WriteLine("De gekozen maand is juli en deze heeft 31 dagen.");
+
+            else if (getal == acht)
+                Console.WriteLine("De gekozen maand is augustus en deze heeft 30 dagen.");
+
+            else if (getal == negen)
+                Console.WriteLine("De gekozen maand is september en deze heeft 31 dagen.");
+
+            else if (getal == tien)
+                Console.WriteLine("De gekozen maand is oktober en deze heeft 30 dagen.");
+
+            else if (getal == elf)
+                Console.WriteLine("De gekozen maand is november en deze heeft 31 dagen.");
+
+            else if (getal == twaalf)
+                Console.WriteLine("De gekozen maand is december en deze heeft 3 dagen.");
+
+            else Console.WriteLine("Geen geldige nummer");
+
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
