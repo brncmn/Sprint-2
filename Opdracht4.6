@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht_4._6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //variabelen
+            string werkuren, jaren, storingen;
+
+            Console.WriteLine("Is uw werkbank meer dan 10000 uur gebruikt?: (ja / nee)");
+            werkuren = Console.ReadLine();
+
+            Console.WriteLine("Is uw werkbank 7 jaar of ouder?: (ja / nee)");
+            jaren = Console.ReadLine();
+
+            Console.WriteLine("Heeft uw werkbank meer dan 25 storingen gehad?: (ja / nee)");
+            storingen = Console.ReadLine();
+
+            if (werkuren == "ja")
+                Console.WriteLine("Uw werkbank moet worden vervangen.");
+            else if (jaren == "ja")
+                Console.WriteLine("Uw werkbank moet worden vervangen.");
+            else if (storingen == "ja")
+                Console.WriteLine("Uw werkbank moet worden vervangen.");
+            else Console.WriteLine("Uw werkbank hoeft nog niet te worden vervangen.");
+
+            Console.ReadKey();
+        }
+    }
+}
