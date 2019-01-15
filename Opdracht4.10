@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace opdracht_4._10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            const int een = 1;
+            const int twee = 2;
+            const int drie = 3;
+            const int vier = 4;
+            const int vijf = 5;
+            const int zes = 6;
+            const int zeven = 7;
+            const int acht = 8;
+            const int negen = 9;
+            const int tien = 10;
+            const int elf = 11;
+            const int twaalf = 12;
+
+
+
+            int getal;
+
+            Console.WriteLine("Vul nummer maand in: ");
+            getal = Convert.ToInt16(Console.ReadLine());
+
+            if (getal == een)
+                Console.WriteLine("Januari");
+
+            else if (getal == twee)
+                Console.WriteLine("Februari");
+
+            else if (getal == drie)
+                Console.WriteLine("Maart");
+
+            else if (getal == vier)
+                Console.WriteLine("April");
+
+            else if (getal == vijf)
+                Console.WriteLine("Mei");
+
+            else if (getal == zes)
+                Console.WriteLine("Juni");
+
+            else if (getal == zeven)
+                Console.WriteLine("Juli");
+
+            else if (getal == acht)
+                Console.WriteLine("Augustus");
+
+            else if (getal == negen)
+                Console.WriteLine("September");
+
+            else if (getal == tien)
+                Console.WriteLine("Oktober");
+
+            else if (getal == elf)
+                Console.WriteLine("November");
+
+            else if (getal == twaalf)
+                Console.WriteLine("December");
+
+            else Console.WriteLine("Geen geldige nummer");
+
+            Console.ReadKey();
+
+        }
+    }
+}
+
