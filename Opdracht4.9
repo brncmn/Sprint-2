@@ -1,0 +1,76 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht_4._9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //const variables
+            const int jan = 1;
+            const int feb = 2;
+            const int mar = 3;
+            const int apr = 4;
+            const int may = 5;
+            const int jun = 6;
+            const int jul = 7;
+            const int agu = 8;
+            const int sep = 9;
+            const int okt = 10;
+            const int nov = 11;
+            const int dec = 12;
+
+            int getal;
+
+            Console.WriteLine("Vul een getal tussen de 1 en de 12: ");
+            getal = Convert.ToInt16(Console.ReadLine());
+
+            if (getal == jan)
+                Console.WriteLine("Januari");
+
+            else if (getal == feb)
+                Console.WriteLine("Februari");
+
+            else if (getal == mar)
+                Console.WriteLine("Maart");
+
+            else if (getal == apr)
+                Console.WriteLine("April");
+
+            else if (getal == may)
+                Console.WriteLine("Mei");
+
+            else if (getal == jun)
+                Console.WriteLine("Juni");
+
+            else if (getal == jul)
+                Console.WriteLine("Juli");
+
+            else if (getal == agu)
+                Console.WriteLine("Augustus");
+
+            else if (getal == sep)
+                Console.WriteLine("September");
+
+            else if (getal == okt)
+                Console.WriteLine("Oktober");
+
+            else if (getal == nov)
+                Console.WriteLine("November");
+
+            else if (getal == dec)
+                Console.WriteLine("December");
+
+
+            else Console.WriteLine("Geen geldige waarde");
+
+
+            Console.ReadKey();
+
+        }
+    }
+}
