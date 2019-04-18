@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdr5._14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //binair
+            Console.WriteLine("Voer een getal in");
+            int getal1 = Convert.ToInt32(Double.Parse(Console.ReadLine()));
+
+            int remainder;
+            string binair = string.Empty;
+            while (getal1 > 0)
+            {
+                remainder = getal1 % 2;
+                getal1 /= 2;
+                binair = remainder.ToString() + binair;
+            }
+            Console.WriteLine("Het binaire getal is:  {0}", binair);
+            Console.WriteLine();
+
+            //hex
+            string getal2;
+            Console.WriteLine("Voer een getal in");
+            getal2 = Console.ReadLine();
+            int nummer = int.Parse(getal2);
+            string hex = nummer.ToString("x");
+            Console.WriteLine("De hex code is: " +hex);
+            Console.ReadLine();
+        }
+    }
+}
