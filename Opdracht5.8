@@ -1,0 +1,24 @@
+using System;
+
+namespace Opdracht_5._8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int fibonacci1, fibonacci2, fibonacci3;
+
+            Console.WriteLine("Getal 1: " + (fibonacci1 = 0));
+            Console.WriteLine("Getal 2: " + (fibonacci2 = 1));
+
+            for (int i = 3; i < 26; i++)
+            {
+                fibonacci3 = fibonacci1 + fibonacci2;
+                fibonacci1 = fibonacci2;
+                fibonacci2 = fibonacci3;
+                Console.WriteLine("Getal " + i + ": " + fibonacci3);
+            }
+            Console.ReadKey();
+        }
+    }
+}
