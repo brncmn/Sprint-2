@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht_5._16
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Voer uw text in: ");
+            string Text = Convert.ToString(Console.ReadLine());
+
+            string name = Text;
+            string newname = "";
+            char[] namechar = name.ToArray();
+            for (int i = 0; i < namechar.Count(); i++)
+            {
+                if ((i % 2) == 0)
+                {
+                    newname += namechar[i].ToString().ToLower();
+                }
+                else
+                {
+                    newname += namechar[i].ToString().ToUpper();
+                }
+            }
+            Console.Write(newname);
+            Console.ReadKey();
+        }
+    }
+}
+
+
