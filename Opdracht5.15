@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht_5._15
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the String");
+            string woord = Convert.ToString(Console.ReadLine());
+
+            string woorden = new string(woord.Reverse().ToArray());
+            if (woorden == woord)
+                { 
+                    Console.Write("Het is een palindroom");
+                }
+            else
+                { 
+                    Console.Write("Het is geen palindroom");
+                }
+            Console.ReadKey();
+    }
+}
