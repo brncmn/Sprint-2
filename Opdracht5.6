@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //dobbelsteen
+            Random dobbelsteen = new Random();
+
+            //variabelen
+            int teller, totaal, nummer, gemiddelde;
+
+
+            totaal = 0;
+
+
+            //willekeurig
+            for (teller = 0; teller <= 5; teller++)
+            {
+                if (teller < 5)
+                {
+                    nummer = dobbelsteen.Next(1, 7);
+                    totaal = totaal + nummer;
+
+                    Console.WriteLine("Gegooid: " + nummer);
+                }
+                else
+                {
+                    Console.WriteLine("Totaal gegooid: " + totaal);
+                    gemiddelde = totaal / teller;
+                    Console.WriteLine("Gemiddelde: " + gemiddelde);
+                }
+                Console.ReadLine();
+            }
+        }
+    }
+}
