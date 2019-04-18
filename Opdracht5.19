@@ -1,0 +1,69 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht5._19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            bool sign = true;
+            int graden;
+            do
+            {
+                Console.WriteLine("Geef de temperatuur van -30 t/m 50 graden");
+                graden = Convert.ToInt32(Console.ReadLine());
+                if (graden > -31 && graden < 51)
+                {             
+                    if (graden > -31 && graden < -19)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                    }
+                    else if (graden > -19 && graden < -9)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGray;
+                    }
+                    else if (graden > -8 && graden < 1)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Cyan;
+                    }
+                    else if (graden > 0 && graden < 11)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                    }
+                    else if (graden > 10 && graden < 21)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                    }
+                    else if (graden > 20 && graden < 31)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                    }
+                    else if (graden > 30 && graden < 51)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                    }
+                    for (int i = 0; i < 10; i++)
+                    {
+                        Console.WriteLine("*******");
+                    }
+
+                    sign = false;
+                }
+                else
+                {
+                    //buiten het bereik
+                    sign = true;
+                    Console.WriteLine("Voer binnen -30 en 50 graden in");
+                    break;
+                }
+            } while (sign);
+            Console.ReadKey();
+
+        }
+    }
+}
