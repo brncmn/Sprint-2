@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht_5._11
+{
+    class Program
+    {
+        static void Main(string[] args)
+
+        {
+            Console.WriteLine("Geef hier uw Geld in?");
+            double Geld = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Geef hier de rente percentage in?");
+            double Rente = Convert.ToDouble(Console.ReadLine());
+
+            double Jaar1 = Geld * (Rente + 100);
+            double Totaal = Jaar1 / 100;
+            Totaal = Math.Round(Totaal, 2);
+            Console.Write(Totaal);
+            Console.ReadLine();
+
+            double Jaar2 = Totaal * (Rente + 100);
+            double Totaal2 = Jaar2 / 100;
+            Totaal2 = Math.Round(Totaal2, 2);
+            Console.Write(Totaal2);
+            Console.ReadLine();
+            Console.ReadLine();
+
+            double Jaar3 = Totaal2 * (Rente + 100);
+            double Totaal3 = Jaar3 / 100;
+            Totaal3 = Math.Round(Totaal3, 2);
+            Console.Write(Totaal3);
+            Console.ReadLine();
+            Console.ReadLine();
+
+            double Jaar4 = Totaal3 * (Rente + 100);
+            double Totaal4 = Jaar4 / 100;
+            Totaal4 = Math.Round(Totaal4, 2);
+            Console.Write(Totaal4);
+            Console.ReadLine();
+            Console.ReadLine();
+
+            double Jaar5 = Totaal4 * (Rente + 100);
+            double Totaal5 = Jaar5 / 100;
+            Totaal5 = Math.Round(Totaal5, 2);
+            Console.Write(Totaal5);
+            Console.ReadLine();
+            Console.ReadLine();
+
+            double Jaar6 = Totaal5 * (Rente + 100);
+            double Totaal6 = Jaar6 / 100;
+            Totaal6 = Math.Round(Totaal6, 2);
+            Console.Write(Totaal6);
+            Console.ReadLine();
+            Console.ReadLine();
+
+            double Jaar7 = Totaal6 * (Rente + 100);
+            double Totaal7 = Jaar7 / 100;
+            Totaal7 = Math.Round(Totaal7, 2);
+            Console.Write(Totaal7);
+            Console.ReadLine();
+            Console.ReadLine();
+
+            double Jaar8 = Totaal7 * (Rente + 100);
+            double Totaal8 = Jaar8 / 100;
+            Totaal8 = Math.Round(Totaal8, 2);
+            Console.Write(Totaal8);
+            Console.ReadLine();
+            Console.ReadLine();
+
+            double Jaar9 = Totaal8 * (Rente + 100);
+            double Totaal9 = Jaar9 / 100;
+            Totaal9 = Math.Round(Totaal9, 2);
+            Console.Write(Totaal9);
+            Console.ReadLine();
+            Console.ReadLine();
+
+            double Jaar10 = Totaal9 * (Rente + 100);
+            double Totaal10 = Jaar10 / 100;
+            Totaal10 = Math.Round(Totaal10, 2);
+            Console.Write(Totaal10);
+            Console.ReadLine();
+            Console.ReadLine();
+        }
+    }
+}
