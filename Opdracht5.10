@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdr5._10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Getal//
+            Console.Write("Voer een getal tussen de 10 en 100 in: ");
+            string test = Console.ReadLine();
+            int getal = Convert.ToInt32(test);
+
+
+            int i;
+            for (i = 1; i < getal; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    Console.WriteLine("Antwoord: " + i);
+                    Console.Write("Berekening: Vorige antwoord + 2");
+                }
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
