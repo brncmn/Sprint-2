@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Opdracht_5._17
+{
+    static class StringHelper
+    {
+        public static string ReverseString(string s)
+        {
+            char[] arr = s.ToCharArray();
+            Array.Reverse(arr);
+            return new string(arr);
+        }
+    }
+
+    class Program
+    {
+        static void Main()
+        {
+            Console.Write("Voer uw text in die u wilt omdraaien: ");
+            string Text = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine(StringHelper.ReverseString(Text));
+            Console.ReadKey();
+        }
+    }
+}
